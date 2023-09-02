@@ -1,0 +1,56 @@
+baseURL = "https://blog.patin.dev"
+author = "Steve Francia"
+copyright = "Copyright © 2010–2023, Patin Muangjan; all rights reserved."
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+ignoreErrors = ["error-remote-getjson"]
+
+theme = "paper"
+title = "Patin Muangjan"
+
+[params]
+  color = 'linen'
+
+  twitter = 'patin_osu'
+  github = 'patin-osu'
+  instagram = 'patin_osu'
+
+  avatar = 'patinopsu@gmail.com'
+  name = 'Patin'
+  bio = 'Welcome abroad :)'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[privacy]
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+  [privacy.instagram]
+    disabled = false
+    simple = true
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+  [services.instagram]
+    disableInlineCSS = true
+  [services.twitter]
+    disableInlineCSS = true
